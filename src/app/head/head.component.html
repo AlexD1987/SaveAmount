@@ -34,5 +34,77 @@
 
 </div>
 <div class="summary">
-  <h4 *ngIf="setSumSaving">Streame Clever! Spare mit Abos aus dem Ausland insgesamt bis zu <b class="saving">{{ sumSavePercentage }}%</b> auf den reguleren Preis!<br></h4>
+  <h4 *ngIf="setSumSaving">Streame clever! Spare mit Abos aus dem Ausland insgesamt bis zu <b class="saving">{{ sumSavePercentage }}%</b> auf den reguleren Preis!<br></h4>
 </div>
+
+<div class="apple bigService">
+  <div class="serviceLogo">
+    <img src="../../assets/image/apple_white.png" alt="">
+  </div>
+  <div class="description">
+    <span *ngIf="setInrValue">
+      Hole dir das Appel TV plus Abo zu einem unschlagbar günstigen Preis von nur <b>{{ saveValueApple }}€</b> im Monat.<br>Wie das geht, alle Infos darüber findest du hier!
+    </span>
+  </div>
+  <div class="link">
+    <span>Streame<br>clever</span>
+    <img src="../../assets/image/arrow_white.png" alt="">
+  </div>
+</div>
+<div class="disney bigService">
+  <div class="serviceLogo">
+    <img src="../../assets/image/disney_white.png" alt="">
+  </div>
+  <div class="description">
+    <span *ngIf="setTryValue">
+      Disney+ für monatlich <b>{{ saveValueDisney }}€</b>! Schmeiß eine Party mit Mickey und co. Alle Infos darüber gibt es hier!
+    </span>
+  </div>
+  <div class="link">
+    <span>Streame<br>clever</span>
+    <img src="../../assets/image/arrow_white.png" alt="">
+  </div>
+</div>
+<div class="netflix bigService">
+  <div class="serviceLogo">
+    <img src="../../assets/image/netflix_white.png" alt="">
+  </div>
+  <div class="description">
+    <span *ngIf="setTryValue">
+      Bindge watching mit Netflix? Schon für einen monatlichen preis von <b>{{ saveValueNetflix }}€</b> in FullHD und werbefrei möglich. Alles Infos findest du hier!
+    </span>
+  </div>
+  <div class="link">
+    <span>Streame<br>clever</span>
+    <img src="../../assets/image/arrow_white.png" alt="">
+  </div>
+</div>
+<div class="paramount bigService">
+  <div class="serviceLogo">
+    <img src="../../assets/image/para_white.png" alt="">
+  </div>
+  <div class="description">
+    <span *ngIf="setCopValue">
+      Besteige den Streaming Berg für nur <b>{{ saveValueParamount }}€</b> im Monat. Die nötige Einweisung dafür findest du hier!
+    </span>
+  </div>
+  <div class="link">
+    <span>Streame<br>clever</span>
+    <img src="../../assets/image/arrow_white.png" alt="">
+  </div>
+</div>
+<div class="spotify bigService">
+  <div class="serviceLogo">
+    <img src="../../assets/image/spotify_white.png" alt="">
+  </div>
+  <div class="description">
+    <span *ngIf="setCopValue">
+      Hier gibt es für nur <b>{{ saveValueSpotify }}€</b> was auf die Ohren. Alle Infos für deine nächste House Party findest du hier!
+    </span>
+  </div>
+  <div class="link">
+    <span>Streame<br>clever</span>
+    <img src="../../assets/image/arrow_white.png" alt="">
+  </div>
+</div>
+
