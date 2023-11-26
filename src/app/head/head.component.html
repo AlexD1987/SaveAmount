@@ -1,0 +1,38 @@
+<div class="headSection">
+  <div class="logo">
+    <img src="../../assets/image/logo.png" alt="">
+    <h4>Stream a lot!<br>Save a lot!</h4>
+  </div>
+
+  <div class="services">
+    <div class="singleService">
+      <img src="../../assets/image/apple_black.png" alt="">
+      <span *ngIf="setInrValue">{{ saveValueApple }}€/m</span>
+      <span *ngIf="setInrValue" class="percent">-{{ appleSavePercentage }}%</span>
+    </div>
+    <div class="singleService">
+      <img src="../../assets/image/disney_blue.png" alt="">
+      <span *ngIf="setTryValue">{{ saveValueDisney }}€/m</span>
+      <span *ngIf="setTryValue" class="percent">-{{ disneySavePercentage }}%</span>
+    </div>
+    <div class="singleService">
+      <img src="../../assets/image/netflix_red.png" alt="">
+      <span *ngIf="setTryValue">{{ saveValueNetflix }}€/m</span>
+      <span *ngIf="setTryValue" class="percent">-{{ netflixSavePercentage }}%</span>
+    </div>
+    <div class="singleService">
+      <img src="../../assets/image/para_blue.png" alt="">
+      <span *ngIf="setCopValue">{{ saveValueParamount }}€/m</span>
+      <span *ngIf="setCopValue" class="percent">-{{ paramountSavePercentage }}%</span>
+    </div>
+    <div class="singleService">
+      <img src="../../assets/image/spotiy_green.png" alt="">
+      <span *ngIf="setPhpValue">{{ saveValueSpotify }}€/m</span>
+      <span *ngIf="setPhpValue" class="percent">-{{ spotifySavePercentage }}%</span>
+    </div>
+  </div>
+
+</div>
+<div class="summary">
+  <h4 *ngIf="setSumSaving">Streame Clever! Spare mit Abos aus dem Ausland insgesamt bis zu <b class="saving">{{ sumSavePercentage }}%</b> auf den reguleren Preis!<br></h4>
+</div>
